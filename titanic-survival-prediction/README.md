@@ -51,20 +51,10 @@ Compare and evaluate the performance of different classification models on the T
 
 ---
 
-## 📷 Optional Visualization
 
-You may add a bar chart using matplotlib/seaborn to visualize the model comparison:
+🧠 Author
+Developed by: [Hossam Mustafa ]
+Passionate about ML, NLP, and Uncertainty Estimation.
+Feel free to connect or contribute!
 
-```python
-import matplotlib.pyplot as plt
 
-models = ['KNN', 'DecisionTree', 'RandomForest', 'GaussianNB', 'SVC', 'ExtraTree', 'GradientBoosting', 'AdaBoost', 'ExtraTrees']
-scores = [85.65, 88.76, 88.04, 89.71, 97.13, 88.52, 94.74, 98.09, 89.00]
-
-plt.figure(figsize=(10,6))
-plt.barh(models, scores, color='skyblue')
-plt.xlabel('Accuracy (%)')
-plt.title('Model Comparison on Titanic Dataset')
-plt.xlim(80, 100)
-plt.grid(True)
-plt.show()
